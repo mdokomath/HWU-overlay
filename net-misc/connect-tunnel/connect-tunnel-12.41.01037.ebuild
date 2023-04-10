@@ -60,8 +60,8 @@ src_install() {
   cp -R "${location}/nui" "${D}/opt/hwu-vpn"  || die
   cp "${location}/startct.sh" "${D}/opt/hwu-vpn" || die
   cp "${location}/startctui.sh" "${D}/opt/hwu-vpn" || die
-  dosym "/opt/hwu-vpn/startct.sh" "/opt/bin/startct.sh"
-  dosym "/opt/hwu-vpn/startctui.sh" "/opt/bin/startctui.sh"
+  dosym "/opt/hwu-vpn/startct.sh" "/opt/bin/startct"
+  dosym "/opt/hwu-vpn/startctui.sh" "/opt/bin/startctui"
 
   if use doc
   then
@@ -69,5 +69,8 @@ src_install() {
   fi
 
   chmod ugo+x ${D}/opt/hwu-vpn/{AvConnect,startct.sh,startctui.sh} || die
+  chmod 4755 ${D}/opt/hwu-vpn/AvConnect || die
+
+  dosym "/etc/ssl/certs" "/opt/hwu-vpn/certs"
 }
 
