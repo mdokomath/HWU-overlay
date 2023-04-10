@@ -25,7 +25,7 @@
  
  XG_UI_ARCHIVE=nui.jar
 -xg_inst_dir=/usr/local/Aventail/nui
-+xg_inst_dir=/upt/hwu-vpn/nui
++xg_inst_dir=/opt/hwu-vpn/nui
  
  # If Java version predates this, we ask the user for confirmation before
  # running.
