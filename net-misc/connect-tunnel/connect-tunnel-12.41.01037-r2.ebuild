@@ -21,11 +21,6 @@ RDEPEND="virtual/jre"
 DEPEND="${RDEPEND}"
 BDEPEND=""
 
-PATCHES=(
-  "${FILESDIR}/installation_directory.patch"
-)
-
-
 src_unpack() {
   unpack ${A}
   if [ -f ${MY_A} ]
