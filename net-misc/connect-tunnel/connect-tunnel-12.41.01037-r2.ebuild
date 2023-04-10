@@ -59,8 +59,8 @@ src_install() {
   chmod ugo+x ${D}/usr/local/Aventail/{AvConnect,startct.sh,startctui.sh} || die
   chmod 4755 ${D}/usr/local/Aventail/AvConnect || die
   dosym "/usr/local/Aventail/startct.sh" "/usr/bin/startct"
-  dosym "/usr/local/Acentail/startctui.sh" "/usr/bin/startctui"
-  dosym "/usr/local/Acentail/startctui.sh" "/usr/bin/hwu-vpn"
+  dosym "/usr/local/Aventail/startctui.sh" "/usr/bin/startctui"
+  dosym "/usr/local/Aventail/startctui.sh" "/usr/bin/hwu-vpn"
   dosym "/etc/ssl/certs" "/opt/hwu-vpn/certs"
 }
 
